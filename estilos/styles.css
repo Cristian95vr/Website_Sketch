@@ -24,7 +24,7 @@ nav{
     top: -14px;
     
 }
-a{
+.cabecera nav a{
     background-color: rgb(98, 98, 241);
     color: white;
     border: 1px solid grey;
@@ -46,15 +46,15 @@ h2{
 time{
     font-weight: bold;
 }
-p{
+.parrafos_p1 p{
     text-indent: -20px;
     
 }
 
 .imagen-logo{
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     top: 20px;
 }
 /* .a_active:active{ */
@@ -68,4 +68,9 @@ p{
 }
 .parrafos_p2 p{
     text-indent: 20px;
+}
+.parrafo_p3{
+    position: absolute;
+    top: 40px;
+    left: 200px;
 }
