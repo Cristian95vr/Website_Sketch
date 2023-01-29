@@ -60,3 +60,12 @@ p{
 /* .a_active:active{ */
     /* background-color: green;} */
     
+.parrafos_p2{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    
+}
+.parrafos_p2 p{
+    text-indent: 20px;
+}
