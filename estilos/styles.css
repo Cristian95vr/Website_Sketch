@@ -81,3 +81,35 @@ time{
 .no_activo{
     background-color: rgb(39, 118, 145);
 }
+.rules_titulo{
+    text-align: center;
+   
+}
+.rules_encabezado{
+    font-size: 120%;
+    
+}
+.rules_cuerpo{
+    margin: 30px;
+}
+dt{
+    font-weight: bold;
+    margin: 20px 0px
+}
+.estilo_letra{
+    list-style-type:lower-latin ;
+}
+
+.rules_sangria{
+    text-indent: 30px;
+}
+.estilo_circulo{
+    list-style-type: circle;
+   }
+.estilo_circulo>li{
+    position: relative;
+    left: 70px;
+}
+.espacio-1{
+    margin: 20px 0px;
+}
