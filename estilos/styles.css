@@ -20,7 +20,7 @@ body{
 }
 nav{
     position: absolute;
-    left: 86%;
+    left: 79%;
     top: -14px;
     
 }
@@ -81,6 +81,7 @@ time{
 .no_activo{
     background-color: rgb(39, 118, 145);
 }
+/* Rules */
 .rules_titulo{
     text-align: center;
    
@@ -112,4 +113,39 @@ dt{
 }
 .espacio-1{
     margin: 20px 0px;
+}
+/* Game_information */
+.game_cuerpo{
+    margin: 100px 200px;
+}
+.contenedor_gtitulo{
+padding-left: 190px;
+}
+.fall_schedule{
+    font-size: 20px;
+}
+.p_subrayado{
+    text-decoration:underline;
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: left;
+    
+}
+th{
+    padding: 15px 15px;
+}
+td{
+    padding: 5px 15px;
+}
+.parrafos_game>p{
+    margin: 20px 0px;
+}
+.span_1{
+    margin-right: 150px;
+}
+.span_2{
+    margin-left: 150px;
 }
