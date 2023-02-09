@@ -20,7 +20,7 @@ body{
 }
 nav{
     position: absolute;
-    left: 79%;
+    left: 75%;
     top: -14px;
     
 }
@@ -90,9 +90,7 @@ time{
     font-size: 120%;
     
 }
-.rules_cuerpo{
-    margin: 30px;
-}
+
 dt{
     font-weight: bold;
     margin: 20px 0px
@@ -115,12 +113,12 @@ dt{
     margin: 20px 0px;
 }
 /* Game_information */
-.game_cuerpo{
+/* .game_cuerpo{
     margin: 100px 200px;
-}
-.contenedor_gtitulo{
+} */
+/* .contenedor_gtitulo{
 padding-left: 190px;
-}
+} */
 .fall_schedule{
     font-size: 20px;
 }
@@ -140,12 +138,52 @@ th{
 td{
     padding: 5px 15px;
 }
+.parrafos_game{
+    display: flex;
+    flex-direction: column;
+}
 .parrafos_game>p{
     margin: 20px 0px;
 }
-.span_1{
-    margin-right: 150px;
+.game_span{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
-.span_2{
-    margin-left: 150px;
+.game_map{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
 }
+.game_map>div{
+    background-color: bisque;
+    border: 1px solid black;
+    margin:20px;
+    padding: 10px;
+}
+/* Registration_form */
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: 2px 2px;
+}
+fieldset>label{
+    margin-bottom: 2px;
+}
+input{
+    padding-left: 2px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+
+
