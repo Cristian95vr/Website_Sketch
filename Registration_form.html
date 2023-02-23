@@ -4,33 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="icon" href="../assets/imagenes/Logo_Mighty_ducks-01.png" type="image/png">
+    <link rel="stylesheet" href="./estilos/styles.css">
     <title>Registration Form</title>
 </head>
 <body>
+    <header>
+        <h1>Mighty Ducks Hockey League</h1>
+    <div class="cabecera">
+        <figure>
+            <img class="imagen1" src="../assets/imagenes/design1_image1.jpg" alt="Jugadores" >
+        </figure>
+        <nav>
+            <a class="no_activo" href="./index.html">Home</a>
+            <a class="no_activo" href="./AboutMDHL.html">About</a>
+            <a class="no_activo" href="./contact.html">Contact</a>
+            <a class="no_activo" href="./Game_information.html">Games</a>
+            <a class="no_activo" href="./Rules.html">Rules</a>
+            <a class="a_activo" href="#">Form</a>
+        </nav>
+    </div>
+</header>
     <section>
         <h2>Registration Form</h2>
-        <form>
-          <div class="informacion">
-            <fieldset>
+        <form action="./show_data.html" method="GET">
+          <fieldset class="contenedor_1">
+            
+                <div class="name">
             <label>
-                Player's First Name: <input type="text" name="name">
+                Player's First Name: <input type="text" name="name" required>
+            </label>
+                </div>
+                <div class="last_name">
+            <label>
+                Last Name: <input type="text" name="last_name" required>
+            </label>
+            </div>
+            <div class="street">
+            <label>
+                Street address: <input type="text" name="street_address" required>
+            </label>
+            </div>
+            <div class="city">
+            <label>
+                City: <input type="text" name="city" required>
             </label>
             <label>
-                Last Name: <input type="text" name="last_name">
+                Zip Code: <input type="number" name="zip_code" required>
             </label>
+            </div>
             <label>
-                Street address: <input type="text" name="street_address">
+                Birth Date: <input type="date" name="birth_date" required>
             </label>
-            <label>
-                City: <input type="text" name="city">
-            </label>
-            <label>
-                Zip Code: <input type="number" name="zip_code">
-            </label>
-            <label>
-                Birth Date: <input type="date" name="birth_date">
-            </label>
+            <div class="gender">
             <span>Gender:</span>
             <label>
                Female<input type="radio" name="gender">
@@ -38,6 +64,8 @@
             <label>
                 Male<input type="radio" name="gender">
             </label>
+        </div>
+            <div class="grade">
             <span>Grade:</span>
             <label>
                 <input type="radio" name="grade" value="Pre-School">Pre-School
@@ -57,15 +85,16 @@
             <label>
                 <input type="radio" name="grade" value="5th">5th
             </label>
+        </div>
         </fieldset>
-          </div>
+          
           <div class="escuela">
             <fieldset>
             <legend>
                 Which elementary school do you live near?
             </legend>
             <label for="school">Closest School:</label>
-                <select name="school">
+                <select name="school" id="school">
                     <option selected="" disabled>Choose</option>
                     <option value="AJ Katzenmaier">AJ Katzenmaier</option>
                     <option value="Greenbay">Greenbay</option>
@@ -81,18 +110,22 @@
             <legend>
                 What position(s) do you normally play? (check all that apply)
             </legend>
+            <div class="posicion_1">
             <label>
                 <input type="checkbox" name="position" value="Forward">Forward
             </label>
             <label>
                 <input type="checkbox" name="position" value="Defense">Defense
             </label>
+            </div>
+            <div class="posicion_2">
             <label>
                 <input type="checkbox" name="position" value="Midfield">Midfield
             </label>
             <label>
                 <input type="checkbox" name="position" value="Goalkeeper">Goalkeeper
             </label>
+            </div>
                 </fieldset>
         </div>
         <div class="uniforme">
@@ -100,6 +133,7 @@
            <legend>
             Uniform Size:
            </legend>
+           <div class="uniforme_1">
            <label>
             <input type="radio" name="size" value="Youth small">Youth small
            </label>
@@ -112,6 +146,8 @@
            <label>
             <input type="radio" name="size" value="Small">Small
            </label>
+           </div>
+           <div class="uniforme_2">
            <label>
             <input type="radio" name="size" value="Medium">Medium
            </label>
@@ -121,6 +157,7 @@
            <label>
             <input type="radio" name="size" value="Extra-Large">Extra-Large
            </label>
+           </div>
            </fieldset>
         </div> 
         <div class="permiso"> 
@@ -130,12 +167,17 @@
             By signing below, I herebyagree anduthorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.
 
         </p>
+        <div class="permiso_final">
         <label>
-            Parent/GuardianSignature: <input type="text" name="Parent/GuardianSignature">
+            Parent/GuardianSignature: <input type="text" name="Parent_GuardianSignature" required>
         </label>
         <label>
-            Date: <input type="date" name="date">
+            Date: <input type="date" name="date" required>
         </label>
+        </div>
+    </div>
+    <div class="boton">
+    <input type="submit" value="Submit">
     </div>
         </form>
     </section>

@@ -6,6 +6,7 @@
 }
 body{
     margin: 20px 40px;
+    background-color: aliceblue;
 }
 .cabecera{
    width: auto;
@@ -14,13 +15,14 @@ body{
 }
 .imagen1{
     object-fit: cover;
+    object-position: 0px -100px;
     width: 100%;
     height: 100%;
     position: absolute;
 }
 nav{
     position: absolute;
-    left: 75%;
+    left: 74%;
     top: -14px;
     
 }
@@ -34,6 +36,7 @@ nav{
 h2{
     text-align: center;
     border: 1px solid black;
+    background-color: beige;
 }
 .contenido_1{
     position: relative;
@@ -57,8 +60,7 @@ time{
     height: 160px;
     top: 20px;
 }
-/* .a_active:active{ */
-    /* background-color: green;} */
+
     
 .parrafos_p2{
     position: absolute;
@@ -166,24 +168,72 @@ td{
 /* Registration_form */
 form{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: column nowrap;
+    border: 2px solid green;
+    padding: 20px;
 }
 fieldset{
+    margin-top: 10px;
+   margin-bottom: 20px;
+   border: none;
+   padding: 15px;
+}
+.contenedor_1{
     display: flex;
     flex-direction: column;
-    margin: 2px 2px;
 }
-fieldset>label{
-    margin-bottom: 2px;
-}
+
+
 input{
-    padding-left: 2px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     border: none;
     border-bottom: 1px solid black;
 }
 
+.uniforme>fieldset{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    }
+.uniforme_1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
 
-
-
+.uniforme_2{
+    display: flex;
+    flex-direction: column;
+}
+.posicion>fieldset{
+    display: flex;
+    flex-direction: row;
+}
+.posicion_1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.posicion_2{
+    display: flex;
+    flex-direction: column;
+}
+.permiso_final{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+legend{
+    font-weight: bold;
+}
+.boton>input{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+.boton{
+    text-align: center;
+    margin-bottom:0px;
+}
